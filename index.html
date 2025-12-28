@@ -36,6 +36,9 @@
       font-weight: 400;
       font-style: normal;
       font-size: 30px;
+      display: inline-block;
+      position: static;
+      margin: 5px 15px;
     }
 
     .center-img {
@@ -43,28 +46,12 @@
       margin: 0 auto;
     }
 
-    #obenLinks {
-      top: 330px;
-      position: absolute;
-      left: 240px;
-    }
-
-    #obenRechts {
-      top: 330px;
-      position: absolute;
-      left: 430px;
-    }
-
-    #untenLinks {
-      top: 380px;
-      position: absolute;
-      left: 240px;
-    }
-
-    #untenRechts {
-      top: 380px;
-      position: absolute;
-      left: 430px;
+    .answers {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 12px;
+      flex-wrap: wrap;
     }
   </style>
   <title>Star Wars Quiz</title>
@@ -75,10 +62,12 @@
   <h2 class="frage">Wie heißt dieser Charakter?</h2>
   <img src="https://observer.com/wp-content/uploads/sites/2/2020/05/yoda-art-observer.jpg?quality=80&strip" width="300"
     height="200" class="center center-img">
-  <a class="urls" id="obenLinks" href="https://www.example.com">1.Yaddle</a>
-  <a class="urls" id="obenRechts" href="https://www.example.com">2.Yado</a>
-  <a class="urls" id="untenLinks" href="https://www.example.com">3.Yoda</a>
-  <a class="urls" id="untenRechts" href="https://www.example.com">4.Grogu</a>
+  <div class="answers">
+    <a class="urls" href="https://www.example.com">1. Yaddle</a>
+    <a class="urls" href="https://www.example.com">2. Yado</a>
+    <a class="urls" href="https://www.example.com">3. Yoda</a>
+    <a class="urls" href="https://www.example.com">4. Grogu</a>
+  </div>
   <!--<img src="bilder/sterne.png">-->
 </body>
 
