@@ -36,9 +36,11 @@
       font-weight: 400;
       font-style: normal;
       font-size: 30px;
-      display: inline-block;
-      position: static;
-      margin: 5px 15px;
+      display: block;
+      width: calc(50% - 50px);
+      box-sizing: border-box;
+      text-align: center;
+      margin: 5px 15px 5px 15px;
     }
 
     .center-img {
@@ -52,6 +54,9 @@
       gap: 30px;
       margin-top: 12px;
       flex-wrap: wrap;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
     }
   </style>
   <title>Star Wars Quiz</title>
