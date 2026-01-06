@@ -26,6 +26,18 @@
      font-family: "Audiowide", sans-serif;
  }
 
+ .falsch {
+     text-shadow:
+         -1px -1px 0 black,
+         1px -1px 0 black,
+         -1px 1px 0 black,
+         1px 1px 0 black;
+     color: rgb(255, 0, 0);
+     text-align: center;
+     font-family: "Audiowide", sans-serif;
+     font-size: clamp(24px, 6vw, 48px);
+ }
+
  .urls {
      text-shadow:
          -1px -1px 0 black,
@@ -38,10 +50,11 @@
      font-style: normal;
      font-size: clamp(16px, 4vw, 30px);
      display: block;
-     width: calc(50% - 50px);
+     width: calc(20% - 50px);
      box-sizing: border-box;
      text-align: center;
-     margin: 5px 15px 5px 15px;
+     margin: 20px 1px;
+     padding: 10px 1px;
  }
 
  .center-img {
